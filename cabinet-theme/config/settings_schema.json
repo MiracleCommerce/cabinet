@@ -1,0 +1,792 @@
+[
+  {
+    "name": "SEO - Page Titles",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Powered by Plug in SEO Plus"
+      },
+      {
+        "type": "paragraph",
+        "content": "Page titles are displayed in the web browser tab and as the blue underlined link text in search engines"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Page titles help](https:\/\/help.pluginuseful.com\/hc\/en-us\/articles\/209539509-Page-titles)"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleTruncateChars",
+        "label": "Maximum length (characters)",
+        "default": "999"
+      },
+      {
+        "type": "header",
+        "content": "Appender"
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleEnableAppender",
+        "label": "Append to short page titles?",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleAppenderTemplate",
+        "label": "Append",
+        "default": "| %% shop.name %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleAppenderTargetLength",
+        "label": "Target length",
+        "default": "70"
+      },
+      {
+        "type": "header",
+        "content": "Page Title Templates"
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTemplateApplyToAll",
+        "label": "Also apply templates to manually entered page titles?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTruncateEnableForCollections",
+        "label": "Apply To Collections",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTruncateEnableForProducts",
+        "label": "Apply To Products",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTruncateEnableForPages",
+        "label": "Apply To Pages",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTruncateEnableForArticles",
+        "label": "Apply To Articles",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_pageTitleTruncateEnableForBlogs",
+        "label": "Apply To Blogs",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleDefaultTemplate",
+        "label": "Default",
+        "default": "%% page_title %%",
+        "info": "this template will apply to all blank page types below"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleIndexTemplate",
+        "label": "Homepage"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitlePageTemplate",
+        "label": "Page",
+        "default": "%% page_title %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleSearchTemplate",
+        "label": "Search",
+        "default": "Shop %% search.terms %% at %% shop.name %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleProductTemplate",
+        "label": "Product",
+        "default": "%% product.title %%%% product.selected_variant.title || prepend_not_empty: ' ' %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleCollectionTemplate",
+        "label": "Collection",
+        "default": "Shop %% current_tags || join: ', ' || append_not_empty: ' ' %%%% collection.title || escape %% at %% shop.name %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleCatalogTemplate",
+        "label": "Catalog Page",
+        "default": "Browse %% collection.products || map: 'collections' || map: 'title' || uniq || take: '5' || join: ', ' || escape || remove: 'Home page, ' || remove: 'home page, '  || remove: 'Home page' || remove: 'Home page'  %% at %% shop.name %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleBlogTemplate",
+        "label": "Blog",
+        "default": "%% shop.name %% %% blog.title %%%% blog.all_tags || take: '5' || join: ', ' || prepend_not_empty: ' blog: ' || append_not_empty: ' and more' %%"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitleArticleTemplate",
+        "label": "Article",
+        "default": "%% article.title %%%% article.tags || take: '3' || join: ', ' || prepend_not_empty: ' | ' || append_not_empty: ' and more' %% | %% shop.name %% %% blog.title %% blog"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_pageTitle404Template",
+        "label": "404",
+        "default": "404: Page Not Found - %% shop.name %%"
+      }
+    ]
+  },
+  {
+    "name": "SEO - Meta Descriptions",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Powered by Plug in SEO Plus"
+      },
+      {
+        "type": "paragraph",
+        "content": "Meta descriptions are displayed as the paragraph text in search engines"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Meta descriptions help](https:\/\/help.pluginuseful.com\/hc\/en-us\/articles\/209542049-Meta-descriptions)"
+      },
+      {
+        "type": "text",
+        "id": "pluginseo_metaDescriptionTruncateChars",
+        "label": "Maximum length (characters)",
+        "default": "170"
+      },
+      {
+        "type": "header",
+        "content": "Meta Description Templates"
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTemplateApplyToAll",
+        "label": "Also apply templates to manually entered meta descriptions?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTruncateEnableForCollections",
+        "label": "Apply To Collections",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTruncateEnableForProducts",
+        "label": "Apply To Products",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTruncateEnableForPages",
+        "label": "Apply To Pages",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTruncateEnableForArticles",
+        "label": "Apply To Articles",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_metaDescriptionTruncateEnableForBlogs",
+        "label": "Apply To Blogs",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionDefaultTemplate",
+        "label": "Default",
+        "default": "%% page_description %%",
+        "info": "this template will apply to all blank page types below"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionIndexTemplate",
+        "label": "Homepage"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionPageTemplate",
+        "label": "Page",
+        "default": "%% page.content || strip_newlines || strip_html || escape || append_not_empty: '.' %% Visit %% shop.name %%"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionSearchTemplate",
+        "label": "Search",
+        "default": "Find %% search.terms || default: 'it' %% here%% search.results || map: 'title' || take: '3' || join: ', ' || prepend_not_empty: ' including ' || append_not_empty: ' and more' %% at %% shop.name %%"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionProductTemplate",
+        "label": "Product",
+        "default": "%% product.description || strip_newlines || replace: '.,', ',' || strip_html || escape %%"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionCollectionTemplate",
+        "label": "Collection",
+        "default": "%% collection.all_tags || take: '3' || join: ', ' || prepend_not_empty: 'Shop ' || append_not_empty: ' and more ' %%%% collection.title || escape %% at %% shop.name %% %% collection.description || strip_html || strip_newlines || escape || strip %%"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionCatalogTemplate",
+        "label": "Catalog Page",
+        "default": "Discover %% collection.products || map: 'title' || uniq || take: '3' || join: ', ' || escape %% and more."
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionBlogTemplate",
+        "label": "Blog",
+        "default": "%% blog.articles || map: 'title' || take: '3' || join: ', ' || prepend_not_empty: 'Read about ' || append_not_empty: ' and more on the '%%%% shop.name %% %% blog.title %% blog."
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescriptionArticleTemplate",
+        "label": "Article",
+        "default": "%% article.excerpt_or_content || strip_newlines || strip_html || escape %%%% article.tags || take: '6' || join: ', ' || prepend_not_empty: ' Read about ' || append_not_empty: ' and more' %% %% article.title %% on the %% shop.name %% %% blog.title %% blog"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_metaDescription404Template",
+        "label": "404",
+        "default": "The page you requested can't be found, please visit %% shop.domain %% instead"
+      }
+    ]
+  },
+  {
+    "name": "SEO - Structured Data",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Powered by Plug in SEO Plus"
+      },
+      {
+        "type": "paragraph",
+        "content": "Structured data allows search engines to better understand the content of your pages, enabling your shop to be displayed in more prominent ways"
+      },
+      {
+        "type": "paragraph",
+        "content": "[Structured data help](https:\/\/help.pluginuseful.com\/article\/1938-how-do-i-set-up-my-json-ld-structured-data)"
+      },
+      {
+        "type": "image",
+        "id": "pluginseo_structuredDataLogo.png",
+        "label": "Logo"
+      },
+      {
+        "type": "checkbox",
+        "id": "pluginseo_structuredDataDisplayLogo",
+        "label": "Include logo?",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Social Profile Links"
+      },
+      {
+        "type": "textarea",
+        "id": "pluginseo_structuredDataSocialProfileLinks",
+        "label": "Social profile links - one URL per line"
+      },
+      {
+        "type": "header",
+        "content": "Reviews"
+      },
+      {
+        "type": "select",
+        "id": "pluginseo_structuredDataReviewApp",
+        "label": "Review App",
+        "default": "autodetect",
+        "options": [
+          {
+            "value": "autodetect",
+            "label": "Auto-Detect"
+          },
+          {
+            "value": "judgeme",
+            "label": "Judge.me"
+          },
+          {
+            "value": "loox",
+            "label": "Loox"
+          },
+          {
+            "value": "opinew",
+            "label": "Opinew"
+          },
+          {
+            "value": "shopify_product_reviews",
+            "label": "Shopify Product Reviews"
+          },
+          {
+            "value": "stamped",
+            "label": "Stamped.io"
+          },
+          {
+            "value": "rivyo",
+            "label": "Rivyo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "theme_info",
+    "theme_name": "Split",
+    "theme_author": "KrownThemes",
+    "theme_version": "3.0.2",
+    "theme_documentation_url": "https:\/\/shopify-support.krownthemes.com\/",
+    "theme_support_url": "https:\/\/krownthemes.com\/shopify-support-contact\/"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.colors.headings.header_sidebars"
+      },
+      {
+        "type": "color",
+        "id": "header_background",
+        "label": "t:sections.split-extra-words.settings_schema.colors.settings.background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "header_text",
+        "label": "t:sections.split-extra-words.settings_schema.colors.settings.text",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.colors.headings.main"
+      },
+      {
+        "type": "color",
+        "id": "main_background",
+        "label": "t:sections.split-extra-words.settings_schema.colors.settings.background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "main_text",
+        "label": "t:sections.split-extra-words.settings_schema.colors.settings.text",
+        "default": "#000000"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.typography.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.typography.headings.headings"
+      },
+      {
+        "type": "font_picker",
+        "id": "headings_font",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.font_family",
+        "default": "montserrat_n7"
+      },
+      {
+        "type": "range",
+        "id": "headings_size",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.base_size",
+        "min": 24,
+        "max": 80,
+        "step": 1,
+        "unit": "px",
+        "default": 60
+      },
+      {
+        "type": "range",
+        "id": "headings_line",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.line_height",
+        "min": 1,
+        "max": 2,
+        "step": 0.1,
+        "default": 1.1
+      },
+      {
+        "type": "checkbox",
+        "id": "headings_hr",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.hr.label",
+        "info": "t:sections.split-extra-words.settings_schema.typography.settings.hr.info",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.typography.headings.body"
+      },
+      {
+        "type": "font_picker",
+        "id": "body_font",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.font_family",
+        "default": "work_sans_n5"
+      },
+      {
+        "type": "range",
+        "id": "body_size",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.base_size",
+        "min": 12,
+        "max": 28,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      },
+      {
+        "type": "range",
+        "id": "body_line",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.line_height",
+        "min": 1,
+        "max": 2,
+        "step": 0.1,
+        "default": 1.6
+      },
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.typography.headings.buttons"
+      },
+      {
+        "type": "range",
+        "id": "buttons_radius",
+        "label": "t:sections.split-extra-words.settings_schema.typography.settings.border_radius",
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "unit": "px",
+        "default": 30
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.product-grid.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "product_animation",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.animation_style.label",
+        "options": [
+          {
+            "value": "one alt color--light",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.animation_style.options__1"
+          },
+          {
+            "value": "three alt color--light",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.animation_style.options__2"
+          }
+        ],
+        "default": "one alt color--light",
+        "info": "t:sections.split-extra-words.settings_schema.product-grid.animation_style.info"
+      },
+      {
+        "type": "color",
+        "id": "product_overlay_bg",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.overlay_colors.background",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "color",
+        "id": "product_overlay_txt",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.overlay_colors.text",
+        "default": "rgba(0,0,0,0)"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_show_secondary",
+        "label": "t:settings_schema.product-grid.settings.show_secondary_image.label",
+        "info": "t:sections.split-extra-words.settings_schema.product-grid.show_secondary_image.info"
+      },
+      {
+        "type": "select",
+        "id": "thumb_resize",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.aspect_ratio.label",
+        "options": [
+          {
+            "value": "fill",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.aspect_ratio.options__1"
+          },
+          {
+            "value": "fit",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.aspect_ratio.options__2"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "t:settings_schema.product-grid.settings.header__1.content",
+        "info": "t:settings_schema.product-grid.settings.header__1.info"
+      },
+      {
+        "type": "select",
+        "id": "reviews_badge_desktop",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.rating.label",
+        "options": [
+          {
+            "value": "no",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.rating.options__1"
+          },
+          {
+            "value": "hover",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.rating.options__2"
+          },
+          {
+            "value": "always",
+            "label": "t:sections.split-extra-words.settings_schema.product-grid.rating.options__3"
+          }
+        ],
+        "default": "hover"
+      },
+      {
+        "type": "checkbox",
+        "id": "reviews_badge_mobile",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.rating.show_on_mobile",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "t:sections.split-extra-words.settings_schema.product-grid.quick_buy.name",
+        "info": "t:sections.split-extra-words.settings_schema.product-grid.quick_buy.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_quick_buy",
+        "label": "t:sections.split-extra-words.settings_schema.product-grid.quick_buy.label",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "quick_buy_variants_style",
+        "label": "t:sections.split-extra-words.sections.main-product.settings.variants.label",
+        "options": [
+          {
+            "value": "radio",
+            "label": "t:sections.split-extra-words.sections.main-product.settings.variants.options__1"
+          },
+          {
+            "value": "select",
+            "label": "t:sections.split-extra-words.sections.main-product.settings.variants.options__2"
+          }
+        ],
+        "default": "radio"
+      },
+      {
+        "type": "checkbox",
+        "id": "quick_buy_show_color_swatches",
+        "label": "t:sections.split-extra-words.sections.main-product.settings.color_swatches.label",
+        "info": "t:sections.split-extra-words.sections.main-product.settings.color_swatches.info",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.favicon.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:settings_schema.favicon.settings.favicon.label",
+        "info": "t:settings_schema.favicon.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "t:settings_schema.cart-page.name",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_action",
+        "label": "t:settings_schema.cart-page.settings.cart_type.label",
+        "options": [
+          {
+            "value": "no-overlay",
+            "label": "t:settings_schema.cart-page.settings.cart_type.options__1.label"
+          },
+          {
+            "value": "overlay",
+            "label": "t:settings_schema.cart-page.settings.cart_type.options__2.label"
+          }
+        ],
+        "default": "overlay"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_notes_enable",
+        "label": "t:settings_schema.cart-page.settings.cart_notes.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_additional_buttons",
+        "label": "t:settings_schema.cart-page.settings.cart_buttons.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_quantity_selector",
+        "label": "t:sections.main-product.blocks.buy_buttons.settings.show_quantity_selector.label",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "t:sections.product-recommendations.settings.header__1.content",
+        "info": "t:sections.product-recommendations.settings.header__1.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "cart_recommendations",
+        "label": "t:sections.split-extra-words.settings_schema.cart.show_recommendations",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "cart_recommendations_heading",
+        "label": "t:sections.product-recommendations.settings.heading.label",
+        "default": "You may also like"
+      }
+    ]
+  },
+  {
+    "name": "Embellishments",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_preloader",
+        "label": "t:sections.split-extra-words.settings_schema.embellishments.preloader.label",
+        "default": true,
+        "info": "t:sections.split-extra-words.settings_schema.embellishments.preloader.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_breadcrumb",
+        "label": "t:sections.split-extra-words.settings_schema.embellishments.breadcrumb.label",
+        "default": false,
+        "info": "t:sections.split-extra-words.settings_schema.embellishments.breadcrumb.info"
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "label": "Enable predictive search",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_show_vendor",
+        "label": "Show vendor",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_show_price",
+        "label": "Show price",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_include_articles",
+        "label": "Include articles in search results",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_include_pages",
+        "label": "Include pages in search results",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook",
+        "info": "https:\/\/www.facebook.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram",
+        "info": "https:\/\/instagram.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube",
+        "label": "YouTube",
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo",
+        "label": "Vimeo",
+        "info": "https:\/\/vimeo.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "Twitter",
+        "info": "https:\/\/twitter.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest",
+        "label": "Pinterest",
+        "info": "https:\/\/www.pinterest.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr",
+        "label": "Tumblr",
+        "info": "http:\/\/shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "label": "TikTok",
+        "info": "https:\/\/www.tiktok.com\/@shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin",
+        "label": "LinkedIn",
+        "info": "https:\/\/www.linkedin.com\/company\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_reddit",
+        "label": "Reddit",
+        "info": "https:\/\/www.reddit.com\/user\/shopify\/"
+      },
+      {
+        "type": "text",
+        "id": "social_flickr",
+        "label": "Flickr",
+        "info": "https:\/\/www.flickr.com\/photos\/shopify\/"
+      },
+      {
+        "type": "text",
+        "id": "social_email",
+        "label": "Email",
+        "info": "mailto:contact@shopify.com"
+      }
+    ]
+  }
+]

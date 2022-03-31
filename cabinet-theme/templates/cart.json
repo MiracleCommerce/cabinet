@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-cart",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "main-cart-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like"
+      }
+    },
+    "1643133387a8d90753": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span class=\"clerk\" data-template=\"@cart-others-also-bought\" data-products=\"[{% for line_item in cart.items %}{% if forloop.index0 > 0 %}, {% endif %}{{ line_item.product.id }}{% endfor %}]\" ><\/span>",
+        "no_padding": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations",
+    "1643133387a8d90753"
+  ]
+}

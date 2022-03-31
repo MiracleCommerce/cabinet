@@ -1,0 +1,343 @@
+{
+  "sections": {
+    "16372498804121dda9": {
+      "type": "split-screen-slider",
+      "blocks": {
+        "bcef8255-36fe-46ca-b42e-60a63eddc9bd": {
+          "type": "slide",
+          "settings": {
+            "tagline": "Nyhet!",
+            "title": "Perler fra Blue Billie",
+            "subtitle": "Fantastisk kolleksjon med halskjeder, armbånd og øredobber i barokke ferskvannsperler i ulike størrelser",
+            "button_label": "Se smykker",
+            "button_link": "shopify:\/\/collections\/blue-billie",
+            "image": "shopify:\/\/shop_images\/BB-Gian-Pearl-Earrings.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/BB-Gian-Pearl-Earrings.jpg",
+            "video": ""
+          }
+        },
+        "69beb0b7-afae-4268-9d7a-f852dad5a35e": {
+          "type": "slide",
+          "settings": {
+            "tagline": "Nyhet!",
+            "title": "Blue Billie is back",
+            "subtitle": "Sjekk ut våre nye og fantastisk vakre hoops fra svenske Blue Billie",
+            "button_label": "Kjøp Blue Billie",
+            "button_link": "shopify:\/\/collections\/blue-billie",
+            "image": "shopify:\/\/shop_images\/BB-small-swirl-hoops.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/BB-small-swirl-hoops.jpg",
+            "video": ""
+          }
+        },
+        "1637249880c19b891c-0": {
+          "type": "slide",
+          "settings": {
+            "tagline": "The Silver Edition",
+            "title": "Smykker i sølv",
+            "subtitle": "Sjekk vårt utvalg av håndplukkede smykker i 925 sterling sølv",
+            "button_label": "Se smykker i sølv",
+            "button_link": "shopify:\/\/collections\/solv",
+            "image": "shopify:\/\/shop_images\/mini-hoops-silver-polished-and-raw.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mini-hoops-silver-polished-and-raw.jpg",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "bcef8255-36fe-46ca-b42e-60a63eddc9bd",
+        "69beb0b7-afae-4268-9d7a-f852dad5a35e",
+        "1637249880c19b891c-0"
+      ],
+      "settings": {
+        "desktop_layout": "split",
+        "desktop_image_positioning": "image-on-left",
+        "desktop_text": "#f1e8db",
+        "desktop_background": "#001d07",
+        "desktop_overlay": "rgba(0,0,0,0)",
+        "mobile_height": "75vh",
+        "mobile_text": "#ffffff",
+        "mobile_background": "#000000",
+        "heading_size": "h0"
+      }
+    },
+    "1642527238b3e28922": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- TrustBox widget - Mini Carousel -->\n<div class=\"trustpilot-widget\" data-locale=\"nb-NO\" data-template-id=\"539ad0ffdec7e10e686debd7\" data-businessunit-id=\"5fd1397e25130d00016390b1\" data-style-height=\"350px\" data-style-width=\"100%\" data-theme=\"dark\" data-stars=\"1,2,3,4,5\" data-review-languages=\"no,nb,nn\" data-text-color=\"#F1E8DB\">\n  <a href=\"https:\/\/no.trustpilot.com\/review\/thecabinet.no\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>\n<!-- End TrustBox widget -->",
+        "no_padding": false
+      }
+    },
+    "163825849356f88edc": {
+      "type": "gallery",
+      "blocks": {
+        "1638258493b25d0aa0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TomWood4.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/tom-wood",
+            "caption": ""
+          }
+        },
+        "1638258493b25d0aa0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MariaBlack2.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/maria-black",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638258493b25d0aa0-0",
+        "1638258493b25d0aa0-1"
+      ],
+      "settings": {
+        "image_height": "half"
+      }
+    },
+    "1636443645b6d4e74b": {
+      "type": "video-background",
+      "settings": {
+        "video": "https:\/\/imgur.com\/jCci3dP.mp4",
+        "video_height": "56.25%",
+        "text_alignment": "horizontal-center vertical-middle",
+        "custom_text": "#ffffff",
+        "custom_overlay": "#000000"
+      }
+    },
+    "1643121254c8df82a9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span class=\"clerk\" data-template=\"@home-page-visitor-complementary\"><\/span>",
+        "no_padding": false
+      }
+    },
+    "1642618609700729fe": {
+      "type": "gallery",
+      "blocks": {
+        "1642618609b48d87fb-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nootka4.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/nootka-jewelry",
+            "caption": ""
+          }
+        },
+        "1642618609b48d87fb-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bjorg5.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/bjorg-jewellery",
+            "caption": ""
+          }
+        },
+        "1642618609b48d87fb-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hasla2.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/hasla",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642618609b48d87fb-2",
+        "1642618609b48d87fb-0",
+        "1642618609b48d87fb-1"
+      ],
+      "settings": {
+        "image_height": "half"
+      }
+    },
+    "16431307961e76223f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<p><\/p>\n<div style=\"text-align:center;\">\n<h2>The Cabinet<\/h2>\n<h1>Et håndplukket utvalg av stilsikre smykker fra noen av de fremste nordiske smykkemerkene. Tom Wood, Maria Black, Bjørg, Hasla, Nootka, Trine Tuxen, m.fl.<\/h1>\n<p><\/p>",
+        "no_padding": false
+      }
+    },
+    "1643132171dd543ac7": {
+      "type": "video-background",
+      "settings": {
+        "video": "https:\/\/imgur.com\/QdutIKd.mp4",
+        "video_height": "56.25%",
+        "text_alignment": "horizontal-center vertical-middle",
+        "custom_text": "rgba(0,0,0,0)",
+        "custom_overlay": "rgba(0,0,0,0)"
+      }
+    },
+    "1643125070b1302faa": {
+      "type": "collection-list",
+      "blocks": {
+        "1643125070356ed6b2-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "oredobber",
+            "image": "shopify:\/\/shop_images\/Kate-Opal-GLitter-3_77343f78-e958-4428-8c4b-00e77ba59003.jpg"
+          }
+        },
+        "1643125070356ed6b2-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "kjeder",
+            "image": "shopify:\/\/shop_images\/Venus-4_8dcbc250-ec5c-4466-b332-520bb7ac8b91.jpg"
+          }
+        },
+        "45dd8661-af83-4054-a55d-b76d80163c1f": {
+          "type": "collection",
+          "settings": {
+            "collection": "armband",
+            "image": "shopify:\/\/shop_images\/BeadsBracelet_e7a46338-4fe1-4f9b-b175-633ee53ee4ce.jpg"
+          }
+        },
+        "e412850e-dc40-4c1e-89c5-da437b4f44a3": {
+          "type": "collection",
+          "settings": {
+            "collection": "ringer",
+            "image": "shopify:\/\/shop_images\/Esther-Ring_f7e057fc-4109-4d24-8f84-bbb8d5cf646e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1643125070356ed6b2-0",
+        "1643125070356ed6b2-1",
+        "45dd8661-af83-4054-a55d-b76d80163c1f",
+        "e412850e-dc40-4c1e-89c5-da437b4f44a3"
+      ],
+      "settings": {
+        "title": "Add some love.",
+        "text_alignment": "horizontal-left vertical-bottom",
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "#ffffff",
+        "bg_overlay": false
+      }
+    },
+    "1643112660a14a38a4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<span class=\"clerk\" data-template=\"@home-page-trending\"><\/span>",
+        "no_padding": false
+      }
+    },
+    "1643121336d7dda694": {
+      "type": "gallery",
+      "blocks": {
+        "1643121336a887433e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blue-Billie-med-logo.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/blue-billie",
+            "caption": ""
+          }
+        },
+        "1643121336a887433e-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AUR1_88016d8b-43e7-4650-8734-4fa9be0ac494.jpg",
+            "alignment": "50% 50%",
+            "link": "shopify:\/\/collections\/aur-studio",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643121336a887433e-0",
+        "1643121336a887433e-1"
+      ],
+      "settings": {
+        "image_height": "half"
+      }
+    },
+    "1642607177e454e09c": {
+      "type": "image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Profilbilde_6111694b-0d4c-4e45-93c7-542ef5a82ec5.png"
+      }
+    },
+    "1643125066e2e3b97b": {
+      "type": "image-with-text",
+      "blocks": {
+        "16431250660bb96246-0": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "Kjøp Gavekort",
+            "url": "shopify:\/\/products\/gavekort",
+            "image": "shopify:\/\/shop_images\/Gavekort_4bcb37fe-5aff-4805-baad-3dde8bb2871c.jpg",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "16431250660bb96246-0"
+      ],
+      "settings": {
+        "image_height": "half",
+        "text_alignment": "horizontal-center vertical-middle"
+      }
+    },
+    "163757206347de448b": {
+      "type": "blog-posts",
+      "blocks": {
+        "1637572063adf12f86-0": {
+          "type": "info",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "1637572063adf12f86-1": {
+          "type": "title",
+          "settings": {}
+        },
+        "d382a930-3c66-47fc-bdba-1fdaa1d81d03": {
+          "type": "summary",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1637572063adf12f86-0",
+        "1637572063adf12f86-1",
+        "d382a930-3c66-47fc-bdba-1fdaa1d81d03"
+      ],
+      "settings": {
+        "title": "The Cabinet Journal",
+        "blog": "news",
+        "post_limit": 4,
+        "show_view_all": true,
+        "custom_text": "#ffffff",
+        "custom_overlay": "#000000"
+      }
+    },
+    "1643731849a817377a": {
+      "type": "apps",
+      "settings": {}
+    }
+  },
+  "order": [
+    "16372498804121dda9",
+    "1642527238b3e28922",
+    "163825849356f88edc",
+    "1636443645b6d4e74b",
+    "1643121254c8df82a9",
+    "1642618609700729fe",
+    "16431307961e76223f",
+    "1643132171dd543ac7",
+    "1643125070b1302faa",
+    "1643112660a14a38a4",
+    "1643121336d7dda694",
+    "1642607177e454e09c",
+    "1643125066e2e3b97b",
+    "163757206347de448b",
+    "1643731849a817377a"
+  ]
+}

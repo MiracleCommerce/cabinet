@@ -1,0 +1,91 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "layout": "split"
+      }
+    },
+    "1643134633192d2292": {
+      "type": "faq",
+      "blocks": {
+        "164313463388cec9db-0": {
+          "type": "text",
+          "settings": {
+            "title": "Hvor raskt kan jeg få pakken min?",
+            "body": "<p>Vi har alle varer på lager og sender samme dag hvis du bestiller før kl 14 på en virkedag. Leveringstid er 1-3 dager med Posten eller Postnord. Vi tilbyr også express levering med DHL. Du kan også hente hos The Cabinet i Larvik hver dag etter avtale. <\/p>"
+          }
+        },
+        "164313463388cec9db-1": {
+          "type": "text",
+          "settings": {
+            "title": "Har dere alle smykker på lager?",
+            "body": "<p>Alle smykker du finner i nettbutikken finnes på vårt lager i Larvik og sendes ut til deg samme dag. <\/p>"
+          }
+        },
+        "164313463388cec9db-2": {
+          "type": "text",
+          "settings": {
+            "title": "Hvorfor selges noen øredobber som par og andre enkeltvis?",
+            "body": "<p>De ulike smykkedesignerne hos The Cabinet har ulik policy på om de selger øredobber enkeltvis eller som par. Vi må følge designernes retningslinjer og de smykkemerkene som selger enkelvis gjør det for å kunne gi full frihet med tanke på å kombinere ulike styles, og for å kunne supplere en enkelt øredobb om den skulle mistes eller bli ødelagt. <\/p><p>Alle øredobber er merket i produktteksten om de selges enkeltvis eller som par. Bildene viser også om de selges enkeltvis eller som par med en eller to øredobber på bildene.<\/p>"
+          }
+        },
+        "c774a58c-7fb9-4cb7-bafe-7f4904e8d0e5": {
+          "type": "text",
+          "settings": {
+            "title": "Har dere fysisk butikk i tillegg til nettbutikk?",
+            "body": "<p>The Cabinet et rent online konsept  med kun nettbutikk. Du kan hente din bestilling i våre lokaler i Larvik og du er hjertelig velkommen til oss i våre lokaler for å se på eller prøve smykker før du bestemmer deg. Ta kontakt på e-post <a href=\"mailto:hei@thecabinet.no\" title=\"mailto:hei@thecabinet.no\">hei@thecabinet.no, <\/a>eller ring oss på tlf 966 18 074 for å avtale tid. <\/p>"
+          }
+        },
+        "288c9d95-6f9e-4878-b56a-3eeb1e95edd7": {
+          "type": "text",
+          "settings": {
+            "title": "Hvordan finner jeg riktig ringstørrelse?",
+            "body": "<p>Vi har laget en artikkel som forklarer hvordan på enklest mulig måte kan finne riktig ringstørrelse. Du finner den <a href=\"\/blogs\/news\/hvordan-finne-riktig-ringstorrelse\" title=\"Hvordan finne riktig ringstørrelse?\">her<\/a>. <\/p>"
+          }
+        },
+        "cfb4d845-49c4-431e-8953-7449724e86ed": {
+          "type": "text",
+          "settings": {
+            "title": "Hvordan fungerer det hvis jeg ønsker å bytte til en annen størrelse eller til et annet smykke?",
+            "body": "<p>Hvis du ønsker å bytte et smykke så sender du oss en e-post til <a href=\"mailto:hei@thecabinet.no\" title=\"mailto:hei@thecabinet.no\">hei@thecabinet.no<\/a>. Du kan også  besøke vår returportal og bestille fraktetikett og returskjema selv. Returportalen finner du her: <a href=\"https:\/\/return.shipmondo.com\/the-cabinet\" target=\"_blank\" title=\"https:\/\/return.shipmondo.com\/the-cabinet\">https:\/\/return.shipmondo.com\/the-cabinet<\/a><\/p><p>Da vil du få en returetikett som vedlegg som du limer oppå den gamle og sender smykket i retur til oss. Du får nytt smykke eller en ny størrelse tilsendt fraktfritt med en gang vi har mottatt pakken fra deg. <\/p>"
+          }
+        },
+        "635c57eb-5ea5-4b2c-964b-922de2a13e27": {
+          "type": "text",
+          "settings": {
+            "title": "Hvor lang tid bruker dere på å behandle en retur og refundere kjøpet",
+            "body": "<p>Hvis du ønsker å benytte deg av angreretten så må du melde fra til oss innen 30 dager etter at du mottok pakken. Du vil få en returetikett på e-post, og når vi har mottatt pakken i retur så refunderes beløpet minus en returfraktkostnad på kr 49 som trekkes fra beløpet innen 2 virkedager. Dette gjelder såfremt returen godkjennes, at produktet er ubrukt og i original stand. <\/p>"
+          }
+        },
+        "133203f3-7847-4924-a942-0fc7a5da2d19": {
+          "type": "text",
+          "settings": {
+            "title": "Hva gjør jeg når et gullforgylt smykke mister farge?",
+            "body": "<p>Gullforgylte sølvsmykker vil etter en stund slite av gullforgylningen som er det tynne laget med ekte gull som ligger oppå sølvet. Det vil si at sølvet kommer til syne.<\/p><p>Det vil variere hvor kort eller lang tid dette tar. På noen mennesker slites det fortere av enn på andre. Måten smykkene brukes på spiller også inn her. Hvorvidt man tar av smykker før man dusjer, sover, trener, bader, etc. Parfymer, lotions og oljer er også med på å slite forgylningen raskere av. <\/p><p>De fleste gullsmeder tilbyr reforgylling av smykker til en ganske rimelig pris. For noen hundrelapper får du smykket ditt gullforgylt som nytt igjen. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164313463388cec9db-0",
+        "164313463388cec9db-1",
+        "164313463388cec9db-2",
+        "c774a58c-7fb9-4cb7-bafe-7f4904e8d0e5",
+        "288c9d95-6f9e-4878-b56a-3eeb1e95edd7",
+        "cfb4d845-49c4-431e-8953-7449724e86ed",
+        "635c57eb-5ea5-4b2c-964b-922de2a13e27",
+        "133203f3-7847-4924-a942-0fc7a5da2d19"
+      ],
+      "settings": {
+        "title": "FAQ",
+        "open_first": false,
+        "custom_background": "rgba(0,0,0,0)",
+        "custom_text": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1643134633192d2292"
+  ]
+}
