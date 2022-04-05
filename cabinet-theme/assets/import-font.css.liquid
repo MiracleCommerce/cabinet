@@ -1,0 +1,21 @@
+{%- assign headings_font = settings.headings_font -%}
+{%- assign body_font = settings.body_font -%}
+{%- comment -%} Fonts {% endcomment %}
+{%- liquid 
+
+    echo headings_font | font_face: font_display: 'swap'
+
+    echo body_font | font_face: font_display: 'swap'
+    assign body_font_bold = body_font | font_modify: 'weight', '+100' 
+
+    if body_font_bold == blank 
+        assign body_font_bold = body_font | font_modify: 'weight', '700' 
+    endif 
+    echo body_font_bold | font_face: font_display: 'swap' 
+
+    assign body_font_italic = body_font | font_modify: 'style', 'italic'
+    if body_font_italic
+        echo body_font_italic | font_face: font_display: 'swap'
+    endif
+
+-%}

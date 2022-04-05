@@ -83,7 +83,7 @@
 
 			{%- if type == 'classic' -%}
 				<script src="{{ 'macy.min.js' | asset_url }}" async defer onload="runMacy()"></script>
-				<script>
+				<script  type="lazyload2" class="lazyload2">
 					function runMacy(){
 						const macyInstance = Macy({
 							container: '.site-nav.style--classic .submenu-masonry',

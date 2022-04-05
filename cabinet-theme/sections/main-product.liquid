@@ -79,8 +79,9 @@
                     {%- if section.settings.gallery_pagination == 'thumbnails' -%}
                       <figure class="thumbnail__image lazy-image">
                         <img 
-                          src="{{ media.preview_image | img_url: '64x64', crop: 'center' }}" alt="{{ media.alt | escape }}"
-                          srcset="{{ media.preview_image | img_url: '64x64', crop: 'center' }} 64w, {{ media.preview_image | img_url: '128x128', crop: 'center' }} 128w"
+                          class="lazyload"
+                          alt="{{ media.alt | escape }}"
+                          data-srcset="{{ media.preview_image | img_url: '64x64', crop: 'center' }} 64w, {{ media.preview_image | img_url: '128x128', crop: 'center' }} 128w"
                           loading="lazy"
                           sizes="64px"
                           width="64" height="64"
@@ -153,7 +154,7 @@
                 <product-header class="product-header">
                   {%- render 'product-header', product: product, block: block, current_variant: current_variant -%}
                 </product-header>
-                <script>
+                <script type="lazyload2" class="lazyload2">
                   ProductHeaderHelper('#product-{{ section.id }}');
                 </script>
               </div>
@@ -303,7 +304,7 @@
                   <template>
                     <input type="hidden" name="id" value="{{ current_variant.id }}">
                   </template>
-                  <script>
+                  <script type="lazyload2" class="lazyload2">
                     document.getElementById('add-to-cart-{{ section.id }}').querySelector('form').append(document.getElementById('add-to-cart-{{ section.id }}').querySelector('template').content.cloneNode(true));
                   </script>
 

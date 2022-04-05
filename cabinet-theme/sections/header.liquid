@@ -57,7 +57,7 @@
   {%- endif -%}
     {%- if section.settings.logo_src -%}
       <a class="logo-img" href="{{ routes.root_url }}" style="height:var(--header-logo);display:flex;align-items:center">
-        <img src="{{ section.settings.logo_src | img_url: 'master' }}" alt="{{ shop.name | escape }}" style="max-height:{{ section.settings.logo_height }}px" width="{{ section.settings.logo_src.width }}" height="{{ section.settings.logo_src.height }}" />
+        <img class="lazyload" src="{{section.settings.logo_src | img_url: '1x'}}" data-src="{{ section.settings.logo_src | img_url: 'master' }}" alt="{{ shop.name | escape }}" style="max-height:{{ section.settings.logo_height }}px" width="{{ section.settings.logo_src.width }}" height="{{ section.settings.logo_src.height }}" />
       </a>
     {%- else -%}
       <a class="logo-txt" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>

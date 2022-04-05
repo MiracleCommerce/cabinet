@@ -80,7 +80,7 @@ class FacetFiltersForm extends HTMLElement {
       .parseFromString(html, 'text/html')
       .getElementById('CollectionProductGrid').innerHTML;
     document.getElementById('CollectionProductGrid').innerHTML = innerHTML;
-    window.preloadImages(document.getElementById('CollectionProductGrid'));
+    //window.preloadImages(document.getElementById('CollectionProductGrid'));
   }
 
   static renderProductCount(html) {
@@ -335,7 +335,7 @@ class ModalBox extends HTMLElement {
 	}
 
 	show(){
-		window.preloadImages(this);
+		//window.preloadImages(this);
 		this.classList.add('active');
 	}
 	hide(remember=false){
@@ -754,7 +754,7 @@ class ProductForm extends HTMLElement {
         }
 
         document.getElementById('AjaxCartSubtotal').innerHTML = cartSubtotalInnerHTML;
-    		window.preloadImages(cartItems);
+    		//window.preloadImages(cartItems);
 
         document.querySelector('[data-header-cart-count]').textContent = document.querySelector('#AjaxCartForm [data-cart-count]').textContent;
         this.dispatchEvent(this.ADD_TO_CART);
@@ -1066,7 +1066,7 @@ class SearchForm extends HTMLElement {
     this.predictiveSearchResults.innerHTML = results;
 		this.preloader = false;
     this.results = this.predictiveSearchResults.querySelectorAll('.search-item, .sidebar__search-link');
-		window.preloadImages(this.predictiveSearchResults);
+		//window.preloadImages(this.predictiveSearchResults);
 	}
 
 	navigateThrough(direction){
@@ -1153,7 +1153,7 @@ class CSSSlider extends HTMLElement {
     window.removeEventListener('resize', this.RESIZE_EVENT);
     window.removeEventListener('scroll', this.SCROLL_EVENT);
     window.removeEventListener('scroll', this.SCROLL_EVENT_ANIMATION);
-    window.preloadImages(this);
+    //window.preloadImages(this);
   }
 
   initSlider(){
@@ -1179,7 +1179,7 @@ class CSSSlider extends HTMLElement {
       </div>
     </div>`;
 
-    window.preloadImages(this);
+    //window.preloadImages(this);
     
     // add css-slide to children, if it's not set
 
@@ -2508,7 +2508,7 @@ class CartForm extends HTMLElement {
         } 
 
         document.getElementById('AjaxCartSubtotal').innerHTML = cartSubtotalInnerHTML;
-    		window.preloadImages(cartItems);
+    		//window.preloadImages(cartItems);
 
     		if ( document.body.classList.contains('template-cart') ) {
     			document.querySelector('#section-cart .box__heading .subtitle').innerHTML = document.querySelector('#AjaxCartForm .subtitle').innerHTML;
@@ -2591,7 +2591,7 @@ class QuickAddToCart extends HTMLElement {
 	init(){
 		this.querySelector('product-form').addEventListener('add-to-cart', ()=>{
 			if ( ! document.body.classList.contains('template-cart') ) {
-				window.preloadImages(document.getElementById('site-cart'));
+				//window.preloadImages(document.getElementById('site-cart'));
 	 			document.getElementById('site-cart').show();
 	 			if ( document.getElementById('cart-recommendations') ) {
 	        document.getElementById('cart-recommendations').generateRecommendations();
@@ -2672,7 +2672,7 @@ class QuickViewProduct extends HTMLElement {
 
 						 	if ( quickProduct.querySelector('.product--add-to-cart-form') ) {
 						 		quickProduct.querySelector('.product--add-to-cart-form').addEventListener('add-to-cart', ()=>{
-					    		window.preloadImages(document.getElementById('site-cart'));
+					    		//window.preloadImages(document.getElementById('site-cart'));
 						 			document.getElementById('site-cart').show();
 						 			if ( document.getElementById('cart-recommendations') ) {
 						        document.getElementById('cart-recommendations').generateRecommendations();
@@ -2906,7 +2906,7 @@ class ProductPage extends HTMLElement {
 
 			 	if ( this.querySelector('.product--add-to-cart-form') ) {
 			 		this.querySelector('.product--add-to-cart-form').addEventListener('add-to-cart', ()=>{
-		    		window.preloadImages(document.getElementById('site-cart'));
+		    		//window.preloadImages(document.getElementById('site-cart'));
 			 			document.getElementById('site-cart').show();
 			 			if ( document.getElementById('cart-recommendations') ) {
 			        document.getElementById('cart-recommendations').generateRecommendations();
@@ -3517,7 +3517,7 @@ class SplitScreenSlider extends CSSSlider {
 			} else {
 				this.slidesMedia[key].style.height = `0`;
 			}
-			window.preloadImages(elm);
+			//window.preloadImages(elm);
 		});
 
 		this.addEventListener('ready', ()=>{

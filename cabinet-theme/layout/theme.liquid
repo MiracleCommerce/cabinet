@@ -2,26 +2,26 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}">
 <head>
  <meta name="ahrefs-site-verification" content="751df4f13a209e6c33e14577cb27187be08001eea1919806b161767d754f5530">
-<!-- Global site tag (gtag.js) - Google Ads: 649537542 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-649537542"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Ads: 649537542 -->
+  <script type="lazyload2" class="lazyload2" async data-src="https://www.googletagmanager.com/gtag/js?id=AW-649537542"></script>
+  <script type="lazyload2" class="lazyload2">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'AW-649537542');
-</script>
+    gtag('config', 'AW-649537542');
+  </script>
 
 
-<!-- Global site tag (gtag.js) - Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CMBWZPDX14"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics 4 -->
+  <script type="lazyload2" class="lazyload2" async data-src="https://www.googletagmanager.com/gtag/js?id=G-CMBWZPDX14"></script>
+  <script type="lazyload2" class="lazyload2">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-CMBWZPDX14');
-</script>
+    gtag('config', 'G-CMBWZPDX14');
+  </script>
 
 
   <meta charset="utf-8">
@@ -45,11 +45,27 @@
     <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
   {%- endunless -%}
 
+  {%- comment -%}
   <link rel="preload" as="script" href="{{ 'theme.js' | asset_url }}">
   <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
-  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {%- endcomment -%}
 
+  {% if template.name == 'index' %}
+    {% render 'critical-css-home' %}
+  {% elsif template.name == 'collection' %}
+    {% render 'critical-css-collection' %}
+  {% elsif template.name == 'product' %}
+    {% render 'critical-css-product' %}
+  {% endif %}
+  
+  <link rel="stylesheet" data-href="{{'theme.css' | asset_url }}">
+
+  <!-- Lazysizes plugin -->
+  <script type="lazyload2" class="lazyload2" data-src="{{'lazysizes.min.js' | asset_url}}" async></script>
+  {%- comment -%}
   {{ content_for_header }}
+  {%- endcomment -%}
+  {{ content_for_header | replace : "addEventListener('load'", "addEventListener('wnw_load'" | replace : "previewBarInjector.init();", "" | replace : 'defer="defer" src=', 'type="lazyload2" class="lazyload2" defer="defer" data-src=' | replace : 'DOMContentLoaded', 'wnw_load' }}
 
   {%- if template == 'customers/addresses' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
@@ -57,18 +73,10 @@
   {%- endif -%}
 
   <noscript>
-    <link rel="stylesheet" href="{{ 'theme-noscript.css' | asset_url }}">
+    <link rel="stylesheet" data-href="{{ 'theme-noscript.css' | asset_url }}">
   </noscript>
 
   <script>
-    const rbi = [];
-    const ribSetSize = (img) => {
-      if ( img.offsetWidth / img.dataset.ratio < img.offsetHeight ) {
-        img.setAttribute('sizes', `${Math.ceil(img.offsetHeight * img.dataset.ratio)}px`);
-      } else {
-        img.setAttribute('sizes', `${Math.ceil(img.offsetWidth)}px`);
-      }
-    }
     function debounce(fn, wait) {
       let t;
       return (...args) => {
@@ -76,14 +84,9 @@
         t = setTimeout(() => fn.apply(this, args), wait);
       };
     }
-    window.addEventListener('resize', debounce(()=>{
-      for ( let img of rbi ) {
-        ribSetSize(img);
-      }
-    }, 250));
   </script>
 
-  <script>
+  <script type="lazyload2" class="lazyload2">
     const ProductHeaderHelper = productSelector => {
       const originalHeader = document.querySelector(`${productSelector} .product-header`);
       let duplicateHeader = document.createElement('div');
@@ -99,11 +102,12 @@
       headerObserver.observe(originalHeader,{ attributes: false, childList: true, subtree: true })
     }
   </script>
-
+    <!-- Import Font -->
+  <link rel="stylesheet" data-href="{{'import-font.css' | asset_url}}">
   {%- render 'head-variables' -%}
 
    <!-- Start of Clerk.io E-commerce Personalisation tool - www.clerk.io -->
-  <script type="text/javascript">
+  <script type="lazyload2" class="lazyload2">
     (function(w,d){
       var e=d.createElement('script');e.type='text/javascript';e.async=true;
       e.src=(d.location.protocol=='https:'?'https':'http')+'://cdn.clerk.io/clerk.js';
@@ -127,23 +131,23 @@
   </script>
   <!-- End of Clerk.io E-commerce Personalisation tool - www.clerk.io -->
 
-<!-- TrustBox script -->
-<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
-<!-- End TrustBox script -->
+  <!-- TrustBox script -->
+  <script type="lazyload2" class="lazyload2" data-src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  <!-- End TrustBox script -->
 
 
 
   {% render 'easy-gdpr-settings' %}
   
-{%- assign full_url = canonical_url | split: '://www.' | last | split: '://' | last -%}
-<link rel="alternate" hreflang="no" href="{{ canonical_url }}">
-<link rel="alternate" hreflang="en" href="https://en.{{ full_url }}">
-<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_a328e7a0aea846dd227e2ce4e8b345e28'
-    });
-</script>
+  {%- assign full_url = canonical_url | split: '://www.' | last | split: '://' | last -%}
+  <link rel="alternate" hreflang="no" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="en" href="https://en.{{ full_url }}">
+  <script type="lazyload2" class="lazyload2" data-src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script type="lazyload2" class="lazyload2">
+      Weglot.initialize({
+          api_key: 'wg_a328e7a0aea846dd227e2ce4e8b345e28'
+      });
+  </script>
   
 </head>
 
@@ -308,7 +312,7 @@
 
   </script>
 
-  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+  <script type="lazyload2" class="lazyload2" data-src="{{ 'theme.js' | asset_url }}" defer></script>
 
   {%- if settings.product_animation contains 'three' -%}
     {%- if settings.product_overlay_txt != 'rgba(0,0,0,0)' -%}
@@ -356,7 +360,9 @@
   {%- endif -%}
 
 
-
-<script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
+  <script type="text/javascript">
+    var windowWidth,lazyLink,lazyImages,lazyBackground,lazyIframe,lazyScripts,navigator_platform,lazyLoadedJS,src,style,datasrc,urls,analytics,s,x,i,j,flag;function init(){flag&&(flag=0,lazyLoadImg(),lazyLoadBackground(),lazyLoadIframe(),load_all_js())}function isElementInViewport(t){t=t.getBoundingClientRect();return 0<=t.top&&0<=t.left&&t.bottom<=(window.innerHeight||document.documentElement.clientHeight)&&t.right<=(window.innerWidth||document.documentElement.clientWidth)}function lazyLoadLink(){lazyLink.forEach(function(t){t.href=(null==t.dataset.href?t:t.dataset).href})}function lazyLoadImg(){lazyImages.forEach(function(t){null!=(src=!(windowWidth<600)||null==t.dataset.mobsrc?t.dataset.src:t.dataset.mobsrc)&&(t.src=src),t.classList.remove("lazy2")})}function lazyLoadImg2(){lazyImages.forEach(function(t){isElementInViewport(t)&&(null!=(src=!(windowWidth<600)||null==t.dataset.mobsrc?t.dataset.src:t.dataset.mobsrc)&&(t.src=src),t.classList.remove("lazy"))})}function lazyLoadBackground(){lazyBackground.forEach(function(t){lazybg=!(windowWidth<600)||null==t.dataset.mobstyle?t.dataset.style:t.dataset.mobstyle,null!=lazybg&&(t.style=lazybg),t.classList.remove("lazybg")})}function lazyLoadIframe(){lazyIframe.forEach(function(t){t.src=(null==t.dataset.src?t:t.dataset).src})}function lazyLoadScripts(){j!=lazyScripts.length&&("lazyload2"==lazyScripts[j].getAttribute("type")?(lazyScripts[j].setAttribute("type","lazyloaded"),void 0!==lazyScripts[j].dataset.src?((s=document.createElement("script")).src=lazyScripts[j].dataset.src,document.body.appendChild(s),s.onload=function(){j++,lazyLoadScripts()}):((s=document.createElement("script")).innerHTML=lazyScripts[j].innerHTML,document.body.appendChild(s),j++,lazyLoadScripts())):(j++,lazyLoadScripts()))}function lazyLoadCss(t){(s=document.createElement("link")).rel="stylesheet",s.href=t,document.getElementsByTagName("head")[0].appendChild(s)}function lazyLoadJS(t){if(lazyLoadedJS)return setTimeout(function(){lazyLoadJS(t)},200),!1;lazyLoadedJS=1,(s=document.createElement("script")).src=t,s.onload=function(){lazyLoadedJS=0},document.body.appendChild(s)}function load_all_js(){setTimeout(function(){var t=new Event("wnw_load");window.dispatchEvent(t)},100),lazyLink=document.querySelectorAll("link"),lazyLoadLink(),j=0,lazyScripts=document.querySelectorAll("script.lazyload2"),lazyLoadScripts(),setInterval(function(){lazyImages=document.querySelectorAll("img.lazy2"),lazyBackground=document.querySelectorAll(".lazybg"),lazyLoadImg(),lazyLoadBackground()},2e3)}document.addEventListener("DOMContentLoaded",function(){windowWidth=screen.width,lazyLink=document.querySelectorAll("link"),lazyImages=document.querySelectorAll("img.lazy2"),nolazyImages=document.querySelectorAll("img.lazy"),lazyBackground=document.querySelectorAll(".lazybg"),lazyIframe=document.querySelectorAll("iframe"),lazyScripts=document.getElementsByTagName("script"),navigator_platform=navigator.platform,j=i=0,flag=1,window.addEventListener("scroll",function(){init()}),window.addEventListener("mousemove",function(){init()}),window.addEventListener("touchstart",function(){init()}),"Linux x86_64"!=navigator_platform&&init(),setTimeout(function(){init()},6e4)});
+  </script>
+  <script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} window.KlarnaThemeGlobals.data_purchase_amount={{product.first_available_variant.price}};window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
 </body>
 </html>
