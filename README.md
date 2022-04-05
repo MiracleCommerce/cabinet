@@ -1,4 +1,4 @@
-# cabinet
+# Shopify Split theme optimization
 Speed Optimization(Split theme)
 ## Results
 ### Homepage
